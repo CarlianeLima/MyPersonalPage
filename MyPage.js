@@ -1,30 +1,34 @@
-console.log('JavaScript carregado com sucesso!');
+console.log("JavaScript carregado com sucesso!");
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o comportamento padrão do envio do formulário
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+const menuIcon = document.getElementById("menuIcon");
 
-    const name = event.target[0].value;
-    const email = event.target[1].value;
-    const message = event.target[2].value;
+//  Toggle mobile menu functionality
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+  menuIcon.textContent = mobileMenu.classList.contains("active") ? "✕" : "☰";
+});
 
-    console.log(name, email, message);
+//  Close menu when clicking on a link
+const mobileLinks = mobileMenu.querySelectorAll("a");
+mobileLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+    menuIcon.textContent = "☰";
+  });
+});
 
-    // Parâmetros que você enviará para o EmailJS:
-    const templateParams = {
-        from_name: name,
-        from_email: email,
-        message: message
-    };
-
-    console.log(templateParams);
-
-    emailjs.send('service_ip1gisx', 'template_xfi08ku', templateParams)
-        .then(function(response) {
-            alert('Email enviado com sucesso!', response.status, response.text);
-
-            // Limpa os campos do formulário após o envio:
-            document.getElementById('contact-form').reset();
-        }, function(error) {
-            alert('Erro ao enviar o email...', error);
-        });
+//  Smooth scroll behavior for navigation
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    const href = this.getAttribute("href");
+    if (href !== "#") {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  });
 });

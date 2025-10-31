@@ -1,165 +1,261 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="MyPage.css">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-
-  <script src="./MyPage.js" defer></script>
-  
-  <title>Carli's Page</title>
-</head>
-
-<body class="containerBody">
-
-  <header class="containerHeader">
-    <nav class="container">
-      <div class="imgAndNameDiv">
-        <img src="./Assets/IMG_0617-2-removebg-preview.png" alt="Carliane Lima" class="facePhoto" />
-        <span>Carliane Lima</span>
-      </div>
-
-      <div>
-        <a href="#about" style="margin-right: 8px;">About</a>
-        <a href="#skills" style="margin-right: 8px;">Skills</a>
-        <a href="#projects" style="margin-right: 8px;">Projects</a>
-        <a href="#contact" style="margin-right: 8px;">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section id="about">
-      <div class="container">
-        <h1>Salesforce Developer, Front-End Developer & Designer</h1>
-        <p class="descriptionAbout">Crafting beautiful, functional, and user-friendly digital experiences.</p>
-        <div id="btnId">
-          <a href="#contact" class="btn btn-outline">Get in touch</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="skills">
-
-          <div class="skill-card" style="border-color: #a855f7;">
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cloudy-fill" viewBox="0 0 16 16">
-              <path d="M13.405 7.027a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 13H13a3 3 0 0 0 .405-5.973"/>
-            </svg>
-
-            <h3>Salesforce</h3>
-            <ul style="list-style-type: none; padding: 0;">
-              <li>Salesforce Development</li>
-              <li>Salesforce Administration</li>
-              <li>LWC</li>
-              <li>Apex</li>
-            </ul>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="MyPage.css" />
+    <title>CL</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container-header">
+        <nav>
+          <div class="logo">
+            <img
+              src="./Assets/Minha-logo-2025.png"
+              alt="Minha Logo"
+              width="50px"
+              height="50px"
+            />
           </div>
-
-          <div class="skill-card">
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
-              <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708"/>
-            </svg>
-
-            <h3>Front-End Development</h3>
-            <ul style="list-style-type: none; padding: 0;">
-              <li>HTML5, CSS3, JavaScript</li>
-              <li>React</li>
-              <li>Responsive Web Design</li>
-              <li>Performance Optimization</li>
-            </ul>
-          </div>
-
-          <div class="skill-card" style="border-color: #a855f7;">
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-palette-fill" viewBox="0 0 16 16">
-              <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07M8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3M5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
-            </svg>
-
-            <h3>Design</h3>
-            <ul style="list-style-type: none; padding: 0;">
-              <li>UI/UX Design</li>
-              <li>Adobe Creatives</li>
-              <li>Figma</li>
-              <li>Photoshop</li>
-              <li>Illustrator</li>
-              <li>Canva</li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="projects">
-          <div class="project-card">
-            <div class="project-card-content">
-              <h3>Project 1</h3>
-              <p>Creating a menu for Instagram</p>
-              <a href="https://carlianelima.github.io/rocketseatFrontProject/" class="btn btn-primary" target="_blank">View Project</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-card-content">
-              <h3>Project 2</h3>
-              <p>Creating a Pokemon prototype</p>
-              <a href="https://github.com/CarlianeLima/pokemonDIO" class="btn btn-primary" target="_blank">View Project</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-card-content">
-              <h3>Project 3</h3>
-              <p>Creating a Spotify prototype</p>
-              <a href="https://github.com/CarlianeLima/meuSpotify-Alura" class="btn btn-primary" target="_blank">View Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <section id="contact">
-
-      <div class="container contactContainer">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-          <input type="text" placeholder="Name" required>
-          <input type="email" placeholder="Email" required>
-          <textarea placeholder="Type your Message" rows="5" required></textarea>
-          <button type="submit" class="sendMessageButton">
-            Send Message
-            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white" class="sendIcon">
-              <path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" />
-            </svg>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="menu-toggle" id="menuToggle">
+            <span id="menuIcon">☰</span>
           </button>
-        </form>
+          <div class="mobile-menu" id="mobileMenu">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="heroSection">
+      <div class="container-hero">
+        <div class="hero-content">
+          <h1>
+            Crafting beautiful digital experiences with modern code and best
+            practices
+          </h1>
+          <p>
+            I'm a front-end developer passionate about building performant,
+            accessible web applications that users love. Specializing in
+            Front-End development, Salesforce development and Designer.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary">View My Work →</button>
+            <button class="btn btn-secondary">Get in Touch</button>
+          </div>
+        </div>
+
+        <div>
+          <img src="./Assets/minhaPhoto01.png" alt="My Photo 01" />
+        </div>
       </div>
     </section>
 
-  </main>
+    <!-- ABOUT -->
+    <section id="about" class="section-about sectionH2">
+      <div class="container-about">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              I'm a Salesforce developer with
+              <strong>5 years of experience</strong> in total building web
+              applications that matter. My journey started in 2019, working as a
+              Salesforce Administrator, solving problems through code, no code,
+              and low-code. Sometime later, I discovered myself in love with the development and the
+              Front-End side, and decided to invest and study to specialize
+              myself, and evolved into a deep love for creating intuitive user
+              experiences, so I also decided to study UX/UI.
+            </p>
+            <p>
+              When I'm not coding, you can find me exploring new design
+              patterns, contributing to open-source projects, or sharing
+              knowledge with the developer community, and always learning.
+            </p>
+          </div>
+          <div class="highlight-cards">
+            <div class="highlight-card">
+              <h3>Frontend Specialist</h3>
+              <p>Expert in HTML, CSS, JavaScript, Tailwind, Lightning Design Patterns(Salesforce)</p>
+            </div>
+            <div class="highlight-card">
+              <h3>Performance Focused</h3>
+              <p>Building fast, focused and scalable applications with good UX/UI</p>
+            </div>
+            <div class="highlight-card">
+              <h3>Languages</h3>
+              <p>I speak English fluently and Spanish at an intermediate level</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>© 2024 Carliane Lima</p>
-      <p>All rights reserved</p>
-    </div>
-  </footer>
+    <!-- SKILLS -->
+    <section id="skills" class="section-skills sectionH2">
+      <div class="container">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skills-list">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">LWC</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Libraries</h3>
+            <div class="skills-list">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Bitbucket</span>
+              <span class="skill-tag">Salesforce Libraries</span>
+              <span class="skill-tag">CI/CD</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Design</h3>
+            <div class="skills-list">
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">UI/UX</span>
+              <span class="skill-tag">Responsive</span>
+              <span class="skill-tag">Zeplin</span>
+              <span class="skill-tag">Canva</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- PROJECTS -->
+    <section id="projects" class="section-projects sectionH2">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="/placeholder.svg?height=200&width=400"
+                alt="E-commerce Platform"
+              />
+            </div>
+            <div class="project-content">
+              <h3>E-commerce Platform</h3>
+              <p>
+                Full-featured e-commerce application with product filtering,
+                cart management, and checkout flow.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">TypeScript</span>
+                <span class="project-tag">Stripe</span>
+              </div>
+              <div class="project-buttons">
+                <button class="project-btn project-btn-primary">Live →</button>
+                <button class="project-btn project-btn-secondary">Code</button>
+              </div>
+            </div>
+          </div>
 
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="/placeholder.svg?height=200&width=400"
+                alt="Design System"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Design System</h3>
+              <p>
+                Comprehensive component library with 50+ reusable components and
+                detailed documentation.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Storybook</span>
+                <span class="project-tag">Tailwind CSS</span>
+                <span class="project-tag">TypeScript</span>
+              </div>
+              <div class="project-buttons">
+                <button class="project-btn project-btn-primary">Live →</button>
+                <button class="project-btn project-btn-secondary">Code</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="/placeholder.svg?height=200&width=400"
+                alt="Analytics Dashboard"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Analytics Dashboard</h3>
+              <p>
+                Real-time analytics dashboard with interactive charts and data
+                visualization.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">React Query</span>
+                <span class="project-tag">Chart.js</span>
+              </div>
+              <div class="project-buttons">
+                <button class="project-btn project-btn-primary">Live →</button>
+                <button class="project-btn project-btn-secondary">Code</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-contact sectionH2">
+      <div class="container">
+        <div class="contact-content">
+          <h2>Let's Work Together</h2>
+          <p class="contact-text">
+            I'm always interested in hearing about new projects and
+            opportunities. Feel free to reach out!
+          </p>
+          <button class="btn btn-primary">✉ Send me an email</button>
+          <div class="social-links">
+            <a href="#" class="social-link" title="LinkedIn">in</a>
+            <a href="#" class="social-link" title="GitHub">⚫</a>
+            <a href="#" class="social-link" title="Twitter">𝕏</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container-footer">
+        <div class="footer-content">
+          <p class="footer-text">© 2025 Carli Lima. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
