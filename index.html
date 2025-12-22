@@ -10,24 +10,26 @@
     <!-- HEADER -->
     <header>
       <div class="container-header">
-        <nav>
-          <div class="logo">
-            <img
-              src="./Assets/Minha-logo-2025.png"
-              alt="Minha Logo"
-              width="50px"
-              height="50px"
-            />
+        <nav class="container">
+          <div class="myName">
+            <p>Carly Lima</p>
           </div>
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <button class="menu-toggle" id="menuToggle">
+
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
             <span id="menuIcon">☰</span>
           </button>
+
           <div class="mobile-menu" id="mobileMenu">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
@@ -40,16 +42,17 @@
 
     <!-- HERO -->
     <section class="heroSection">
-      <div class="container-hero">
+      <div class="container hero-grid">
         <div class="hero-content">
+          <p class="hero-kicker">Front-End & Salesforce Developer</p>
           <h1>
-            Crafting beautiful digital experiences with modern code and best
-            practices
+            Crafting beautiful digital experiences<br />
+            with modern code and best practices
           </h1>
           <p>
-            I'm a front-end developer passionate about building performant,
-            accessible web applications that users love. Specializing in
-            Front-End development, Salesforce development and Designer.
+            I build accessible, high-performance web experiences and Salesforce
+            solutions. I love turning complex problems into simple, elegant
+            interfaces.
           </p>
           <div class="hero-buttons">
             <button class="btn btn-primary">View My Work →</button>
@@ -57,15 +60,17 @@
           </div>
         </div>
 
-        <div>
-          <img src="./Assets/minhaPhoto01.png" alt="My Photo 01" />
+        <div class="hero-media">
+          <div class="hero-image-wrap">
+            <img src="./Assets/minhaPhoto01.png" alt="Photo of Carly Lima" />
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="section-about sectionH2">
-      <div class="container-about">
+      <div class="container">
         <div class="about-content">
           <div class="about-text">
             <h2>About Me</h2>
@@ -74,10 +79,11 @@
               <strong>5 years of experience</strong> in total building web
               applications that matter. My journey started in 2019, working as a
               Salesforce Administrator, solving problems through code, no code,
-              and low-code. Sometime later, I discovered myself in love with the development and the
-              Front-End side, and decided to invest and study to specialize
-              myself, and evolved into a deep love for creating intuitive user
-              experiences, so I also decided to study UX/UI.
+              and low-code. Sometime later, I discovered myself in love with the
+              development and the Front-End side, and decided to invest and
+              study to specialize myself, and evolved into a deep love for
+              creating intuitive user experiences, so I also decided to study
+              UX/UI.
             </p>
             <p>
               When I'm not coding, you can find me exploring new design
@@ -88,15 +94,22 @@
           <div class="highlight-cards">
             <div class="highlight-card">
               <h3>Frontend Specialist</h3>
-              <p>Expert in HTML, CSS, JavaScript, Tailwind, Lightning Design Patterns(Salesforce)</p>
+              <p>
+                Expert in HTML, CSS, JavaScript, Tailwind, Lightning Design
+                Patterns(Salesforce)
+              </p>
             </div>
             <div class="highlight-card">
               <h3>Performance Focused</h3>
-              <p>Building fast, focused and scalable applications with good UX/UI</p>
+              <p>
+                Building fast, focused and scalable applications with good UX/UI
+              </p>
             </div>
             <div class="highlight-card">
               <h3>Languages</h3>
-              <p>I speak English fluently and Spanish at an intermediate level</p>
+              <p>
+                I speak English fluently and Spanish at an intermediate level
+              </p>
             </div>
           </div>
         </div>
@@ -150,74 +163,80 @@
           <div class="project-card">
             <div class="project-image">
               <img
-                src="/placeholder.svg?height=200&width=400"
-                alt="E-commerce Platform"
+                src="./Assets/instagramImage.png"
+                alt="Instagram Dashboard"
               />
             </div>
             <div class="project-content">
-              <h3>E-commerce Platform</h3>
+              <h3>Instagram Menu Application</h3>
               <p>
-                Full-featured e-commerce application with product filtering,
-                cart management, and checkout flow.
+                I created an Instagram feature application with some
+                possibilities of menu.
               </p>
               <div class="project-tags">
-                <span class="project-tag">React</span>
-                <span class="project-tag">TypeScript</span>
-                <span class="project-tag">Stripe</span>
+                <span class="project-tag">HTML 32.9%</span>
+                <span class="project-tag">CSS 55.1%</span>
+                <span class="project-tag">JavaScript 12.0%</span>
               </div>
               <div class="project-buttons">
-                <button class="project-btn project-btn-primary">Live →</button>
-                <button class="project-btn project-btn-secondary">Code</button>
+                <a
+                  href="https://github.com/CarlianeLima/rocketseatFrontProject"
+                  target="_blank"
+                  class="project-btn project-btn-primary"
+                  rel="noopener noreferrer">Live →
+                </a>
               </div>
             </div>
           </div>
 
           <div class="project-card">
             <div class="project-image">
-              <img
-                src="/placeholder.svg?height=200&width=400"
-                alt="Design System"
-              />
+              <img src="./Assets/netflixImage.jpg" alt="Netflix Dashboard" />
             </div>
             <div class="project-content">
-              <h3>Design System</h3>
+              <h3>Netflix Replication</h3>
               <p>
-                Comprehensive component library with 50+ reusable components and
-                detailed documentation.
+                This project is a replica of the Netflix homepage layout,
+                created using HTML and CSS.
               </p>
               <div class="project-tags">
-                <span class="project-tag">Storybook</span>
-                <span class="project-tag">Tailwind CSS</span>
-                <span class="project-tag">TypeScript</span>
+                <span class="project-tag">HTML 67.5%</span>
+                <span class="project-tag">CSS 32.5%</span>
               </div>
               <div class="project-buttons">
-                <button class="project-btn project-btn-primary">Live →</button>
-                <button class="project-btn project-btn-secondary">Code</button>
+                <a
+                  href="https://github.com/CarlianeLima/netflixLayout"
+                  target="_blank"
+                  class="project-btn project-btn-primary"
+                  rel="noopener noreferrer">Live →
+                </a>
               </div>
             </div>
           </div>
 
           <div class="project-card">
             <div class="project-image">
-              <img
-                src="/placeholder.svg?height=200&width=400"
-                alt="Analytics Dashboard"
-              />
+              <img src="./Assets/pokemonImage.jpg" alt="Pokemon Dashboard" />
             </div>
             <div class="project-content">
-              <h3>Analytics Dashboard</h3>
+              <h3>Pokemon Design</h3>
               <p>
-                Real-time analytics dashboard with interactive charts and data
-                visualization.
+                I created a Pokemon themed webpage using HTML, CSS, and
+                JavaScript, showcasing various Pokemon characters and their
+                details.
               </p>
               <div class="project-tags">
-                <span class="project-tag">Next.js</span>
-                <span class="project-tag">React Query</span>
-                <span class="project-tag">Chart.js</span>
+                <span class="project-tag">HTML 22.8%</span>
+                <span class="project-tag">CSS 40.5%</span>
+                <span class="project-tag">JavaScript 36.7%</span>
               </div>
               <div class="project-buttons">
-                <button class="project-btn project-btn-primary">Live →</button>
-                <button class="project-btn project-btn-secondary">Code</button>
+                <a
+                  href="https://github.com/CarlianeLima/pokemonDIO"
+                  target="_blank"
+                  class="project-btn project-btn-primary"
+                  rel="noopener noreferrer">Live →
+                </a>
               </div>
             </div>
           </div>
@@ -232,13 +251,25 @@
           <h2>Let's Work Together</h2>
           <p class="contact-text">
             I'm always interested in hearing about new projects and
-            opportunities. Feel free to reach out!
+            opportunities. <br />
+            Feel free to reach out!
           </p>
           <button class="btn btn-primary">✉ Send me an email</button>
           <div class="social-links">
-            <a href="#" class="social-link" title="LinkedIn">in</a>
-            <a href="#" class="social-link" title="GitHub">⚫</a>
-            <a href="#" class="social-link" title="Twitter">𝕏</a>
+            <a
+              href="https://www.linkedin.com/in/carliane-lima-143635178/"
+              target="_blank"
+              class="social-link"
+              title="LinkedIn"
+              >in</a
+            >
+            <a
+              href="https://github.com/CarlianeLima"
+              class="social-link"
+              target="_blank"
+              title="GitHub"
+              >⚫</a
+            >
           </div>
         </div>
       </div>
@@ -246,16 +277,17 @@
 
     <!-- FOOTER -->
     <footer>
-      <div class="container-footer">
-        <div class="footer-content">
-          <p class="footer-text">© 2025 Carli Lima. All rights reserved.</p>
-          <div class="footer-links">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Sitemap</a>
-          </div>
+      <div class="container footer-content">
+        <p class="footer-text">© 2026 Carly Lima. All rights reserved.</p>
+
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Sitemap</a>
         </div>
       </div>
     </footer>
+
+    <script src="./MyPage.js"></script>
   </body>
 </html>
